@@ -1,4 +1,4 @@
-/* Nova Mama — site vitrine minimal (confidentialité + support) */
+/* Nova Mama : site vitrine (home, guides, confidentialité, support) */
 :root {
   --bg: #FDF7F8;
   --surface: #FFFFFF;
@@ -50,3 +50,28 @@ footer {
 }
 footer a { margin-right: 14px; }
 ul { padding-left: 22px; }
+
+/* Badges stores officiels (lot home 05/09) */
+.badges { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; margin: 14px 0 6px; }
+.badges a { display: inline-flex; line-height: 0; }
+.badges img.apple { height: 54px; width: auto; }
+.badges img.google { height: 80px; width: auto; margin: -13px 0; }
+
+/* Section « L'app en action » (lot home 05/09) : cartes arrondies, ombres douces rosées */
+.showcase { margin-top: 44px; }
+.showcase .eyebrow {
+  font-size: 12px; font-weight: 600; letter-spacing: 0.14em;
+  color: var(--primary-deep); text-transform: uppercase;
+}
+.showcase h2 { margin-top: 6px; }
+.shots { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 18px; }
+.shots figure { margin: 0; }
+.shots img {
+  width: 100%; height: auto; display: block; border-radius: var(--radius);
+  box-shadow: 0 10px 30px rgba(194, 66, 106, 0.18);
+}
+.shots figcaption {
+  font-size: 14px; font-weight: 600; color: var(--text-secondary);
+  text-align: center; margin-top: 10px;
+}
+@media (max-width: 560px) { .shots { grid-template-columns: 1fr; max-width: 320px; margin-left: auto; margin-right: auto; } }
