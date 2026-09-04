@@ -55,4 +55,4 @@ ul { padding-left: 22px; }
 .badges { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; margin: 14px 0 6px; }
 .badges a { display: inline-flex; line-height: 0; }
 .badges img.apple { height: 54px; width: auto; }
-.badges img.google { height: 80px; width: auto; margin: -13px 0; }
+.badges img.google { height: 54px; width: auto; }
