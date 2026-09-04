@@ -57,10 +57,11 @@
   /* téléphone flottant du hero */
   .hero-phone { position:relative; display:flex; justify-content:center; }
   .phone {
-    width:min(320px,80%); border-radius:44px; background:#1c1218; padding:12px;
+    /* visuels store deja habilles : carte nue (bezel a remettre avec les captures brutes) */
+    width:min(340px,86%); border-radius:36px; background:transparent; padding:0;
     box-shadow:0 40px 80px rgba(201,79,114,.28), 0 12px 28px rgba(51,32,40,.18);
   }
-  .phone img { width:100%; display:block; border-radius:34px; }
+  .phone img { width:100%; height:auto; display:block; border-radius:36px; }
   .hero .phone { animation: heroFloat 7s ease-in-out infinite; }
   @keyframes heroFloat { 0%,100% { transform:translateY(0) rotate(2.5deg);} 50% { transform:translateY(-16px) rotate(1deg);} }
   .heart { position:absolute; font-size:22px; opacity:0; animation:rise 6s linear infinite; }
@@ -84,8 +85,8 @@
   .story { max-width:1180px; margin:40px auto 0; padding:0 32px; display:grid; grid-template-columns:.9fr 1.1fr; gap:60px; }
   .story-phone { position:sticky; top:12vh; align-self:start; height:76vh; display:flex; align-items:center; justify-content:center; }
   .story-phone .phone { width:min(320px,90%); position:relative; }
-  .story-phone .screen { position:relative; border-radius:34px; overflow:hidden; }
-  .story-phone .screen img { position:absolute; inset:0; opacity:0; transition:opacity .6s ease; }
+  .story-phone .screen { position:relative; border-radius:36px; overflow:hidden; }
+  .story-phone .screen img { position:absolute; inset:0; width:100%; height:auto; opacity:0; transition:opacity .6s ease; }
   .story-phone .screen img.base { position:relative; opacity:1; }
   .story-phone .screen img.active { opacity:1; }
   .steps { padding:10vh 0 20vh; }
@@ -158,7 +159,7 @@
   </div>
   <div class="hero-phone">
     <span class="heart">💛</span><span class="heart">💛</span><span class="heart">💛</span>
-    <div class="phone"><img src="/img/01-accueil.webp" width="720" height="1564" alt="Écran d'accueil de Nova Mama, application de suivi de grossesse : semaine 31, taille de bébé et conseils personnalisés"></div>
+    <div class="phone"><img src="/img/01-accueil.webp" alt="Écran d'accueil de Nova Mama, application de suivi de grossesse : semaine 31, taille de bébé et conseils personnalisés"></div>
   </div>
 </header>
 
@@ -186,9 +187,9 @@
   <div class="story-phone">
     <div class="phone">
       <div class="screen">
-        <img class="base" src="/img/01-accueil.webp" width="720" height="1564" alt="">
-        <img data-step="1" src="/img/02-scan-produit.webp" width="720" height="1564" alt="">
-        <img data-step="2" src="/img/04-chat-nuit.webp" width="720" height="1564" alt="">
+        <img class="base" src="/img/01-accueil.webp" alt="">
+        <img data-step="1" src="/img/02-scan-produit.webp" alt="">
+        <img data-step="2" src="/img/04-chat-nuit.webp" alt="">
       </div>
     </div>
   </div>
